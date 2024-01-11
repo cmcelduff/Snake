@@ -29,7 +29,7 @@ namespace Snake
         };
 
         private readonly int rows = 15, cols = 15;
-        private readonly Image[,] gridImages;
+        private readonly System.Windows.Controls.Image[,] gridImages;
         private GameState gameState;
         private bool gameRunning;
 
@@ -99,9 +99,9 @@ namespace Snake
             }
         }
 
-        private Image[,] SetupGrid()
+        private System.Windows.Controls.Image[,] SetupGrid()
         {
-            Image[,] images = new Image[rows, cols];
+            System.Windows.Controls.Image[,] images = new System.Windows.Controls.Image[rows, cols];
             GameGrid.Rows = rows;
             GameGrid.Columns = cols;
             GameGrid.Width = GameGrid.Height * (cols / (double)rows);
@@ -110,7 +110,7 @@ namespace Snake
             {
                 for (int c = 0; c < cols; c++)
                 {
-                    Image image = new Image
+                    System.Windows.Controls.Image image = new System.Windows.Controls.Image
                     {
                         Source = Images.Empty,
                         RenderTransformOrigin = new Point(0.5, 0.5)
@@ -147,7 +147,7 @@ namespace Snake
         private void DrawSnakeHead()
         {
             Position headPos = gameState.HeadPosition();
-            Image image = gridImages[headPos.Row, headPos.Col];
+            System.Windows.Controls.Image image = gridImages[headPos.Row, headPos.Col];
             image.Source = Images.Head;
 
             int rotation = dirToRotation[gameState.Dir];

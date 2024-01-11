@@ -14,6 +14,7 @@
     <None Remove="Assets\DeadHead.png" />
     <None Remove="Assets\DroidSansMono.ttf" />
     <None Remove="Assets\Empty.png" />
+    <None Remove="Assets\Food.png" />
     <None Remove="Assets\Head.png" />
     <None Remove="Assets\icon.ico" />
     <None Remove="Assets\Snake.png" />
@@ -28,6 +29,7 @@
     <Resource Include="Assets\DeadBody.png" />
     <Resource Include="Assets\DeadHead.png" />
     <Resource Include="Assets\Empty.png" />
+    <Resource Include="Assets\Food.png" />
     <Resource Include="Assets\Head.png" />
     <Resource Include="Assets\icon.ico" />
     <Resource Include="Assets\Snake.png" />
